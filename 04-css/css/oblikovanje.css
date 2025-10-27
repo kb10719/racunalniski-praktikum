@@ -16,7 +16,7 @@ body {
         preostanek pa se enakomerno razdeli med levim in desnim robom  */
     margin: auto;
     /*  Obojestranska poravnava besedila    */
-    left: justify;
+    text-align: justify;
 }
 
 /*  Odstranimo podčrtovanje povezav in outline (ta se včasih pokaže kot kvadratek okrog povezave)  */
@@ -45,11 +45,21 @@ h2 {
 {padding:2em rgb(51, 0, 102, 0.1)}
 
 .slika {
+   width :40%;
    font-size:0.9em ;
+    float: right;
+    margin-left: 2em;
+    text-align: left;
+} 
+.slika img{
     width: 100%;
     height: auto;
-    float: right;
-    margin-left: 2em
+    border-radius:50%;
 }
-
+.slika p:last-child {
+    font-size:0.8em;
+}
+a::before {
+  content: "🔗";
+}
 
